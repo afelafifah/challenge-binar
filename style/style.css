@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.main-bg {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: url("../assets/image/main-bg.jpg");
+  position: relative;
+  /* background-image: radial-gradient(
+      189.96% 61.18% at 50% 38.82%,
+      rgba(255, 181, 72, 0) 0%,
+      rgba(52, 44, 29, 0.80319) 73.22%,
+      #08090a 99.74%
+    ),
+    url("../assets/image/main-bg.jpg"); */
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+.navbar * {
+  color: white !important;
+  letter-spacing: 0.2em;
+  font-family: "Open Sans", sans-serif;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  margin-right: 142px;
+}
+
+.content {
+  color: white;
+  margin-top: 200px;
+}
+
+.content h1 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 83px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.content h3 {
+  margin-top: 30px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+
+  letter-spacing: 2px;
+}
+
+.btn-warning {
+  margin-top: 50px;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-right: 55px;
+  padding-bottom: 15px;
+  padding-left: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.the-story {
+  color: white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+}
+@media (max-width:991px){
+  .content{
+    margin-top 100px;
+  }
+  .navbar-collapse{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.wrapper {
+  text-align: center;
+  height: 100px;
+  position: relative;
+  animation-name: down-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes down-animation {
+}
+.the-story h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.the-games {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-image: radial-gradient(
+      189.96% 61.18% at 50% 38.82%,
+      rgba(255, 181, 72, 0) 0%,
+      rgba(52, 44, 29, 0.80319) 73.22%,
+      #08090a 99.74%
+    ),
+    url("/assets/image/the-games-bg.jpg");
+
+  /* background: rgb(0, 0, 0);
+  background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0.26514355742296913) 0%,
+      rgba(0, 0, 0, 0.8897934173669468) 16%
+    )
+    url("/assets/image/the-games-bg.jpg"); */
+}
+
+/* .bg-page2 {
+  background-image: url("/assets/image/the-games-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+} */
