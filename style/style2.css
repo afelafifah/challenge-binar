@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+
   position: relative;
   background-color: #9c835f;
 }
@@ -16,7 +17,6 @@
   font-size: 72px;
   line-height: 98px;
   letter-spacing: 0.1em;
-  color: #724c21;
 }
 .navbar h1 {
   font-family: Open Sans;
@@ -46,7 +46,15 @@
   height: 92px;
 }
 
-.vs h1 {
+#win,
+#lose,
+#draw {
+  transform: rotate(-45deg);
+  margin-top: 50%;
+}
+
+#vs h1 {
+  margin-top: 45%;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;

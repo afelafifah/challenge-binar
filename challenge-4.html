@@ -28,7 +28,7 @@
         <div class="container">
             <div class="row">
                 <!-- untuk player -->
-                <div class="col-md-4 text-uppercase player">
+                <div class="col-md-4 text-uppercase player" id="pilihanPlayer">
                     <h2 class="">player 1</h2>
                     <div class="batu-player" style="padding-top: 5%;">
                         <img src="./assets/image2/batu.png" alt="">
@@ -41,47 +41,47 @@
                     </div>
                 </div>
                 <!-- untuk result text -->
-                <div class="result-text col-md-4 text-center">
+                <div class="result-text col-md-4 text-center align-middle">
                     <!-- untuk vs -->
-                    <div class="vs align-middle">
+                    <div class="vs align-middle" id="vs">
                         <h1 class="font-bold mx-auto align-middle">VS</h1>
                     </div>
                     <!-- untuk result: win -->
-                    <div class="win d-none border border-success rounded bg-success">
+                    <div class="win d-none border border-success rounded bg-success" id="win">
                         <p>Player Win</p>
                     </div>
                     <!-- untuk result: lose -->
-                    <div class="lose d-none border border-success rounded bg-success">
+                    <div class="d-none border border-success rounded bg-success" id="lose">
                         <p>Com Win</p>
                     </div>
                     <!-- untuk result: draw -->
-                    <div class="draw d-none border border-success rounded bg-success">
+                    <div class="d-none border border-success rounded bg-success" id="draw">
                         <p>draw</p>
                     </div>
 
                 </div>
                 <!-- untuk com -->
-                <div class="col-md-4 text-uppercase com">
+                <div class="col-md-4 text-uppercase com" id='resultCom'>
                     <h2>COM</h2>
                     <div class="batu-player" style="padding-top: 5%;">
-                        <img src="./assets/image2/batu.png" alt="">
+                        <img src="./assets/image2/batu.png" alt="" id="0">
                     </div>
                     <div class="gunting-player" style="padding-top: 5%;">
-                        <img src="./assets/image2/gunting.png" alt="">
+                        <img src="./assets/image2/gunting.png" alt="" id="1">
                     </div>
                     <div class="kertas-player" style="padding-top: 5%;">
-                        <img src="./assets/image2/kertas.png" alt="">
+                        <img src="./assets/image2/kertas.png" alt="" id="2">
                     </div>
                 </div>
             </div>
 
             <!-- Refresh page -->
             <div class="refresh">
-                <img src="./assets/image2/refresh.png" alt="" class="rounded mx-auto d-block">
+                <img src="./assets/image2/refresh.png" alt="" class="rounded mx-auto d-block" id="refresh">
             </div>
         </div>
 
     </section>
-    
+    <script src="./script.js"></script>
 </body>
 </html>
