@@ -20,7 +20,7 @@ let playerChoice=0;
 let resultCom = document.querySelectorAll('#resultCom img');
 console.log(resultCom);
 
-//definisi numberCom untuk generate bil. random Comp
+//deklarasi numberCom untuk generate bil. random Comp
 let numberCom; 
 console.log(numberCom);
 
