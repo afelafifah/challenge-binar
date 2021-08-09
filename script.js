@@ -21,7 +21,7 @@ let resultCom = document.querySelectorAll('#resultCom img');
 console.log(resultCom);
 
 //definisi numberCom untuk generate bil. random Comp
-let numberCom = Math.floor(Math.random() * 3);
+let numberCom; 
 console.log(numberCom);
 
 //looping untuk nampilin begron abu2 hasil pilihanPlayer
@@ -30,6 +30,7 @@ for(let i=0; i<pilihanPlayer.length; i++){
         playerChoice = i ;
         pilihanPlayer[i].style.background = 'grey';
         //looping untuk nampilin begron abu2 hasil numberCom
+        numberCom = Math.floor(Math.random() * 3);
         for(let j=0; j<resultCom.length; j++){
             if(j===numberCom){
               resultCom[j].style.background = 'grey' ;
@@ -96,18 +97,33 @@ function boxResult(result){
         vs.classList.add("d-none");
     }
 }
+//fungsi ini untuk mengembalikan hasil 
+function resetBox(result){
+    if(result=='draw'){
+        draw.classList.add("d-none");
+        vs.classList.remove("d-none");
+    } else if(result=='win'){
+        win.classList.add("d-none");
+        vs.classList.remove("d-none");
+    } else{
+        lose.classList.add("d-none");
+        vs.classList.remove("d-none");
+    }
+}
 
 //untuk refresh page
 const refreshPage = document.querySelector('#refresh').addEventListener("click", function(){
-    //memanggil mathrandom kembali
-    numberCom = Math.floor(Math.random() * 3);
+   
     //menghapus background com
-    resultCom[numberCom].style.background = 'none' ;
+    resultCom[numberCom].style.background = 'none';
     //menghapus background player
-    pilihanPlayer[i].style.background = 'none';
-    //mengembalikan tampilan hasil ke vs
-    
+    pilihanPlayer[playerChoice].style.background = 'none';
 
+     //memanggil mathrandom kembali
+     numberCom = null;
+    //mengembalikan tampilan hasil ke vs
+    resetBox(result);
+    
 
 });
 
